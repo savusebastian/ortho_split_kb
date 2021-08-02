@@ -2373,9 +2373,9 @@ Text GLabel 20650 5650 0    50   Input ~ 0
 ROW15
 Text GLabel 20650 5550 0    50   Input ~ 0
 ROW16
-Text GLabel 20650 3350 0    50   Input ~ 0
+Text GLabel 20650 4350 0    50   Input ~ 0
 D_NJ6
-Text GLabel 20650 3450 0    50   Input ~ 0
+Text GLabel 20650 4450 0    50   Input ~ 0
 D_PJ6
 Text GLabel 17450 900  2    50   Input ~ 0
 ROW11
@@ -2870,17 +2870,6 @@ F 3 "" H 1600 8000 50  0001 C CNN
 	1    1600 8000
 	0    1    1    0   
 $EndComp
-$Comp
-L power:GND #PWR031
-U 1 1 61D05F3F
-P 1800 8250
-F 0 "#PWR031" H 1800 8000 50  0001 C CNN
-F 1 "GND" V 1805 8122 50  0000 R CNN
-F 2 "" H 1800 8250 50  0001 C CNN
-F 3 "" H 1800 8250 50  0001 C CNN
-	1    1800 8250
-	0    -1   -1   0   
-$EndComp
 Text GLabel 1800 8550 2    50   Input ~ 0
 D_NJ5
 Text GLabel 1800 8750 2    50   Input ~ 0
@@ -2914,35 +2903,6 @@ Wire Wire Line
 Connection ~ 850  9500
 Wire Wire Line
 	850  9500 1000 9500
-Wire Wire Line
-	1800 8200 1800 8250
-Connection ~ 1800 8250
-Wire Wire Line
-	1800 8250 1800 8300
-$Comp
-L Device:R_Small R13
-U 1 1 61D05F64
-P 1700 8200
-F 0 "R13" V 1600 8150 50  0000 C CNN
-F 1 "5.1k" V 1600 8350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1700 8200 50  0001 C CNN
-F 3 "~" H 1700 8200 50  0001 C CNN
-F 4 "C14677" V 1700 8200 50  0001 C CNN "LCSC"
-	1    1700 8200
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R15
-U 1 1 61D05F6B
-P 1700 8300
-F 0 "R15" V 1800 8250 50  0000 C CNN
-F 1 "5.1k" V 1800 8450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1700 8300 50  0001 C CNN
-F 3 "~" H 1700 8300 50  0001 C CNN
-F 4 "C14677" V 1700 8300 50  0001 C CNN "LCSC"
-	1    1700 8300
-	0    1    1    0   
-$EndComp
 $Comp
 L Connector:USB_C_Receptacle_USB2.0 J2
 U 1 1 61E679E1
@@ -3398,17 +3358,6 @@ F 3 "" H 21800 8000 50  0001 C CNN
 	1    21800 8000
 	0    -1   1    0   
 $EndComp
-$Comp
-L power:GND #PWR032
-U 1 1 61E67B14
-P 21600 8250
-F 0 "#PWR032" H 21600 8000 50  0001 C CNN
-F 1 "GND" V 21605 8122 50  0000 R CNN
-F 2 "" H 21600 8250 50  0001 C CNN
-F 3 "" H 21600 8250 50  0001 C CNN
-	1    21600 8250
-	0    1    -1   0   
-$EndComp
 Text GLabel 21600 8550 0    50   Input ~ 0
 D_NJ6
 Text GLabel 21600 8750 0    50   Input ~ 0
@@ -3454,35 +3403,6 @@ Wire Wire Line
 Connection ~ 22550 9500
 Wire Wire Line
 	22550 9500 22400 9500
-Wire Wire Line
-	21600 8200 21600 8250
-Connection ~ 21600 8250
-Wire Wire Line
-	21600 8250 21600 8300
-$Comp
-L Device:R_Small R14
-U 1 1 61E67B39
-P 21700 8200
-F 0 "R14" V 21600 8150 50  0000 C CNN
-F 1 "5.1k" V 21600 8350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 21700 8200 50  0001 C CNN
-F 3 "~" H 21700 8200 50  0001 C CNN
-F 4 "C14677" V 21700 8200 50  0001 C CNN "LCSC"
-	1    21700 8200
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:R_Small R16
-U 1 1 61E67B40
-P 21700 8300
-F 0 "R16" V 21800 8250 50  0000 C CNN
-F 1 "5.1k" V 21800 8450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 21700 8300 50  0001 C CNN
-F 3 "~" H 21700 8300 50  0001 C CNN
-F 4 "C14677" V 21700 8300 50  0001 C CNN "LCSC"
-	1    21700 8300
-	0    -1   1    0   
-$EndComp
 $Comp
 L Device:C_Small C5
 U 1 1 621A4EEC
@@ -3553,8 +3473,32 @@ F 4 "C108405" V 1700 8550 50  0001 C CNN "LCSC"
 	1    1700 8550
 	0    1    1    0   
 $EndComp
-Text GLabel 2700 3350 2    50   Input ~ 0
+Text GLabel 2700 4350 2    50   Input ~ 0
 D_PJ5
-Text GLabel 2700 3450 2    50   Input ~ 0
+Text GLabel 2700 4450 2    50   Input ~ 0
 D_NJ5
+NoConn ~ 1600 8200
+NoConn ~ 1600 8300
+NoConn ~ 21800 8200
+NoConn ~ 21800 8300
+NoConn ~ 2700 5350
+NoConn ~ 2700 4850
+NoConn ~ 2700 4750
+NoConn ~ 2700 4650
+NoConn ~ 2700 4550
+NoConn ~ 2700 3850
+NoConn ~ 2700 3450
+NoConn ~ 2700 3350
+NoConn ~ 2700 3250
+NoConn ~ 2700 3150
+NoConn ~ 20650 5350
+NoConn ~ 20650 4850
+NoConn ~ 20650 4750
+NoConn ~ 20650 4650
+NoConn ~ 20650 4550
+NoConn ~ 20650 3850
+NoConn ~ 20650 3450
+NoConn ~ 20650 3350
+NoConn ~ 20650 3250
+NoConn ~ 20650 3150
 $EndSCHEMATC
